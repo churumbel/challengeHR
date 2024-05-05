@@ -1,0 +1,70 @@
+  .carrousel {
+    position: relative;
+    max-width: 100%; 
+  }
+  
+  .slide {
+    display: none;
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .active {
+    display: block;
+    /*Se muestra en pantalla la diapositiva del carrousel*/
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  /*Botón izquierdo*/
+  .prev {
+    left: 0;
+  }
+  /*Botón derecho*/
+  .next {
+    right: 0;
+  }
+  
+  .contentCarrousel {
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo de las diapositivas del carrousel */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding en el ancho total del elemento */
+  }
+  
+  .image {
+    height: 150px;
+    max-height: 50%; 
+    object-fit: cover; 
+    object-position: center; 
+  }
+  
+  .carrousel text {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .buttoncarrousel {
+    padding: 10px;
+    background-color: #BF1363;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

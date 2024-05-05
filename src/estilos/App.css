@@ -1,0 +1,111 @@
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+.App {
+  background-color: #D8DBE2; 
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;  
+} 
+/*Las preguntas del usuario las posicione del lado izquierdo. 
+Pero si esta fuera una demostración para el cliente final, lo hubiese hecho al revés. 
+Aquí la primera persona es el bot de recursos humanos.*/
+.questionBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;  
+}
+
+.userQuestionFormat {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px 20px 20px 0px; /*Para que parezcan cuadros de diálogo*/
+  margin-bottom: 20px;
+  min-height: 10px;  /*altura minima */
+  max-width: 30%; /* Ancho máximo para evitar que ocupen toda la pantalla */
+}
+
+.responseBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.carrouselResponse,
+.buttonResponse {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px 15px 0px 15px; /*Para que parezcan cuadros de diálogo*/
+  margin-bottom: 20px;
+  min-width: 40%;
+  min-height: 100px;  /*altura minima */
+}
+
+.buttonResponse {
+  margin-bottom: 10px;
+  min-width: 30%;
+  min-height: 100px;
+}
+
+/*Versión responsive para dispositivos más pequeños*/
+@media only screen and (max-width: 576px) {
+  .app {
+    padding: 7px;
+  }
+  .questionBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;  
+    max-height: 80px;
+  }
+
+  .carrouselResponse,
+  .buttonResponse  {
+    padding: 10px; 
+  }
+
+  .userQuestionFormat {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px 20px 20px 0px;
+    margin-bottom: 20px;
+    min-height: 8px;  /*altura minima */
+    max-width: 95%; /* Ancho máximo para evitar que ocupen toda la pantalla */
+  }
+}
+
+.options{
+  display: flex;
+  margin: 2%;
+  flex-direction: column;
+}
+
+/* Estilos para los botones */
+.options button {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #4b86ff; /* Color azul para los botones */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.interviews{
+  margin-right: 0;
+  margin-left: 10%;
+}
