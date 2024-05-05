@@ -2,7 +2,7 @@
 
 Esta prueba se centró en el diseño y maquetación de dos componentes React para una aplicación de mensajería. Además de las burbujas de mensajes habituales, se planteó la creación de dos tipos de mensajes nuevos: Mensajes con botones, que ofrecen respuestas a mensajes anteriores, y un Carrusel de opciones, una forma visual de seleccionar entre varias opciones, presentadas con imágenes y texto.
 
-###Objetivos:
+### Objetivos:
 
 Diseño de los componentes: Se solicitó diseñar previamente ambos componentes para evaluar la capacidad resolutiva de UX frente a un problema o necesidad. El diseño completo debía ser entregado como parte de la prueba.
 ![](https://github.com/churumbel/challengeHR/blob/main/figma.png)
